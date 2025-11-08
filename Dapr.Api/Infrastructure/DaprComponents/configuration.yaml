@@ -1,0 +1,12 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: appconfig
+spec:
+  type: configuration.file
+  version: v1
+  metadata:
+  - name: items
+    value: |
+      FeatureFlag=true
+      MaxRetries=3
